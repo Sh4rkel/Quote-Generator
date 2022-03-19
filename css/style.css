@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@1&family=Open+Sans:wght@700&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #f6f6f7;
+  background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23797383' fill-opacity='0.59'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  color: #212529;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quote-container {
+  width: auto;
+  max-width: 90rem;
+  min-width: 80rem;
+  padding: 2rem 3rem;
+  border-radius: 1rem;
+  background-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.quote-text {
+  font-size: 2.75rem;
+}
+
+.long-quote {
+  font-size: 2rem;
+}
+
+.fa-quote-left,
+.fa-quote-right {
+  font-size: 4rem;
+}
+
+.quote-author {
+  margin-top: 1.5rem;
+  font-size: 2rem;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.stars-rating {
+  margin-top: -0.9rem;
+  margin-left: -10rem;
+}
+
+.stars-rating:not(:checked) > input {
+  position: absolute;
+  top: -9999px;
+}
+
+.stars-rating:not(:checked) > label {
+  float: right;
+  width: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 2.8rem;
+  color: #ccc;
+}
+
+.stars-rating:not(:checked) > label:before {
+  content: "★ ";
+}
+
+.stars-rating > input:checked ~ label {
+  color: #212529;
+}
+
+.stars-rating:not(:checked) > label:hover,
+.stars-rating:not(:checked) > label:hover ~ label {
+  color: #212529;
+}
+
+.stars-rating > input:checked + label:hover,
+.stars-rating > input:checked + label:hover ~ label,
+.stars-rating > input:checked ~ label:hover,
+.stars-rating > input:checked ~ label:hover ~ label,
+.stars-rating > label:hover ~ input:checked ~ label {
+  color: #212529;
+}
+
+.button-container {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  cursor: pointer;
+  font-size: 1.2rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 1rem;
+  color: #f6f6f7;
+  background-color: #212529;
+  outline: none;
+  padding: 0.5rem 1.8rem;
+  box-shadow: 0 0.3rem rgba(121, 121, 121, 0.65);
+}
+
+button:hover {
+  filter: brightness(110%);
+}
+
+button:active {
+  transform: translate(0, 0.3rem);
+  box-shadow: 0 0.1 rgba(255, 255, 255, 0.65);
+}
+
+.twitter-button:hover {
+  color: #1da1f2;
+}
+
+.facebook-button:hover {
+  color: #4267b2;
+}
+
+.linkedin-button:hover {
+  color: #0077b5;
+}
+
+.reddit-button:hover {
+  color: #ff4500;
+}
+
+.fa-twitter,
+.fa-facebook,
+.fa-linkedin,
+.fa-reddit {
+  font-size: 1.5rem;
+}
+
+/* Loader */
+.loader {
+  border: 2.2rem solid #f6f6f7;
+  border-top: 2.2rem solid #212529;
+  border-radius: 50%;
+  width: 12rem;
+  height: 12rem;
+  animation: loading 2s linear infinite;
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Mobile Devices */
+@media screen and (max-width: 100rem) {
+  .quote-container {
+    margin: auto 1rem;
+  }
+
+  .quote-text {
+    font-size: 2.5rem;
+  }
+
+  .button-container {
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  .stars-rating {
+    align-items: center;
+    display: block;
+    justify-content: center;
+    margin-right: 5rem;
+    margin-top: 1.2rem;
+  }
+
+  button {
+    margin-top: 1rem;
+  }
+}
