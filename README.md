@@ -14,7 +14,7 @@
 - reddit share ✖️
 - new quote generator button ✔️
 - five star review design ✔️
-- five star functionality ✖️
+- five star functionality ✔️
 - quote save function ✖️
 - quote copy button ✖️
 
