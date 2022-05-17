@@ -9,9 +9,9 @@
 - create design ✔️
 - making responsive ✔️
 - twitter share ✔️
-- facebook share ✖️
-- linkedIn share ✖️
-- reddit share ✖️
+- facebook share ✔️
+- linkedIn share ✔️
+- reddit share ✔️
 - new quote generator button ✔️
 - five star review design ✔️
 - five star functionality ✔️
